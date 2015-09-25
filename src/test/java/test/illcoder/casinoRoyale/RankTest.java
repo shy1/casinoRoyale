@@ -2,36 +2,22 @@ package test.illcoder.casinoRoyale;
 
 import io.illcoder.casinoRoyale.core.Rank;
 import org.junit.Test;
-<<<<<<< HEAD
+
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by gsuhocki on 9/23/15.
- */
 
-=======
 import static org.junit.Assert.*;
 /**
  * Created by clouie on 9/22/15.
  */
 
 
->>>>>>> master
+
 public class RankTest {
+
 
     @Test
     public void getPokerValueTest(){
-<<<<<<< HEAD
-        assertEquals("Testing the value Rank.TWO should return 2",2, Rank.TWO.getPokerValue());
-    }
-
-    @Test
-    public void getBlackJackValueTest(){
-        assertEquals("Testing the value Rank.TWO should return 2",2, Rank.TWO.getBlackJackValue());
-
-    }
-
-=======
         assertEquals("Testing the value Rank.TWO should return 2", 2, Rank.TWO.getPokerValue());
         assertEquals("Testing the value Rank.THREE should return 3", 3, Rank.THREE.getPokerValue());
         assertEquals("Testing the value Rank.FOUR should return 4", 4, Rank.FOUR.getPokerValue());
@@ -66,5 +52,5 @@ public class RankTest {
     }
 
 
->>>>>>> master
+
 }
