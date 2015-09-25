@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 /**
  * Created by clouie on 9/23/15.
- * tests the card class
+ * tests the card class.
  */
 public class CardTest {
     Card card = new Card(Suit.HEARTS, Rank.JACK);
