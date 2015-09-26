@@ -1,5 +1,7 @@
 package test.illcoder.casinoRoyale;
 
+import io.illcoder.casinoRoyale.core.*;
+//import io.illcoder.casinoRoyale.core.Dealer;
 import org.junit.Test;
 
 import java.util.List;
@@ -15,7 +17,7 @@ public class DealerTest {
 
     @Test
     public void dealCardTest() {
-/*        for (int i = 0; i < 10; i++) {
+/*       for (int i = 0; i < 10; i++) {
             Card card1 = dealer.dealCard();
             System.out.println(card1.getRank() + ":" + card1.getSuit());
         }
@@ -29,10 +31,10 @@ public class DealerTest {
         Card testCard = dealer.getCardByIndex(0);
         dealer.shuffleDeck();
 
-        Card testCard2 = dealer.getCardByIndex(0);
+        /* Card testCard2 = dealer.getCardByIndex(0);
         System.out.println(testCard.getRank() + ":" + testCard.getSuit());
         System.out.println(testCard2.getRank() + ":" + testCard2.getSuit());
-
+*/
         assertNotEquals("Testing that the first card of the dealer's deck is different after running shuffleDeck", testCard, dealer.getCardByIndex(0));
     }
 }

@@ -1,12 +1,15 @@
 package io.illcoder.casinoRoyale.core;
-import io.illcoder.casinoRoyale.core.Rank;
-import io.illcoder.casinoRoyale.core.Suit;
+//import io.illcoder.casinoRoyale.core.CardValues
+//import io.illcoder.casinoRoyale.core.Suit;
 
 /**
  * Created by syoung on 9/22/15.
  */
 
 public class Card {
+    //CardValues cv = new CardValues();
+    //private CardValues.Suit suit;
+    //private CardValues.Rank rank;
 
     private Suit suit;
     private Rank rank;

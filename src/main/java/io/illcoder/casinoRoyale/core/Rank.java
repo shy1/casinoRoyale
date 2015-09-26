@@ -38,7 +38,5 @@ public enum Rank {
         return this.blackjackValue;
     }
 
-
-
 }
 

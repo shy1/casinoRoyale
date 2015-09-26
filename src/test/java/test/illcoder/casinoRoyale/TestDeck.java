@@ -1,5 +1,6 @@
 package test.illcoder.casinoRoyale;
-//import io.illcoder.casinoRoyale.core.Deck;
+import io.illcoder.casinoRoyale.core.Card;
+import io.illcoder.casinoRoyale.core.Deck;
 import org.junit.Test;
 
 import java.util.List;
@@ -27,7 +28,10 @@ public class TestDeck {
         public void shuffleDeckTest(){
             List<Card> deck2 = deck1.getShuffledDeck();
             Card testCard = deck2.get(0);
+            System.out.println(testCard.toString());
             deck1.shuffleDeck(deck2);
+            Card testCard2 = deck2.get(0);
+            System.out.println(testCard2.toString());
 
 
             assertNotEquals("Testing that the first card of deck2 is different after running shuffleDeck", testCard, deck2.get(0));

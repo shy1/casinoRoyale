@@ -4,6 +4,8 @@ import java.util.List;
 
 import java.util.*;
 
+import static io.illcoder.casinoRoyale.core.Rank.*;
+
 /**
  * Created by syoung on 9/22/15.
  *Build card deck to play poker or blackjack
@@ -41,8 +43,8 @@ public class Deck {
         Collections.shuffle(deck);
         return deck;
     }
-/* Added to test the delivery of the shuffled deck
-/*    public static void main (String[] args){
+/* Added to test the delivery of the shuffled deck*/
+    public static void main (String[] args){
         Deck deck1 = new Deck();
         List<Card> deck2 = deck1.getShuffledDeck();
         System.out.println(deck2.get(0));
@@ -50,5 +52,5 @@ public class Deck {
 
         System.out.println(deck2.get(0));
     }
-*/
+
 }
