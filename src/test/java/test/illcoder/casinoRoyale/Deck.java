@@ -1,8 +1,12 @@
-package io.illcoder.casinoRoyale.core;
-import java.util.ArrayList;
-import java.util.List;
+package test.illcoder.casinoRoyale;
 
-import java.util.*;
+import test.illcoder.casinoRoyale.Card;
+import test.illcoder.casinoRoyale.Rank;
+import test.illcoder.casinoRoyale.Suit;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by syoung on 9/22/15.
@@ -20,7 +24,7 @@ public class Deck {
         deck = new ArrayList();
         for (Suit suit : Suit.values()) {
             for (Rank rank : Rank.values()) {
-                deck.add(new Card(suit, rank));
+               deck.add(new Card(suit, rank));
             }
         }
     }
