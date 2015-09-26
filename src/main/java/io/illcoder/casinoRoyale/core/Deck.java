@@ -13,8 +13,8 @@ public class Deck {
     List<Card> deck;
 
     /**
-     *Create a new array list for each Suit of cards 2 through Ace and prints out the size of the deck
-     * The deck is the shuffled after created
+     * Creates a new array list for each Suit of cards 2 through Ace
+     * when the Deck object is constructed
      */
     public Deck(){
         deck = new ArrayList();
@@ -24,17 +24,19 @@ public class Deck {
             }
         }
     }
-    /*
-     *Add shuffle method and apply it to deck
+
+    /**
+     * Shuffles an arraylist of Card objects
+     * @param _deck - the arraylist of cards to be shuffled
      */
     public void shuffleDeck(List<Card> _deck){
         Collections.shuffle(_deck);
     }
 
-    /*
-     *Add method to return the getShuffledDeck method to
+    /**
+     * Shuffles the deck arraylist and returns it
+     * @return deck - the shuffled arraylist
      */
-
     public List<Card> getShuffledDeck() {
         Collections.shuffle(deck);
         return deck;
