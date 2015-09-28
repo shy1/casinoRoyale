@@ -23,7 +23,7 @@ public class Card {
      * @param suit
      * @param rank
      */
-     Card(Suit suit, Rank rank){
+    public Card(Suit suit, Rank rank){
 
         this.suit = suit;
         this.rank = rank;
@@ -68,7 +68,7 @@ public class Card {
      * @return
      */
     public String toString(){
-        return "This Card is the " + rank + " of " + suit;
+        return rank + " of " + suit;
     }
 
 
