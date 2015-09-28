@@ -70,7 +70,6 @@ public class Player {
     public void setMoney(int money) {
         this.money = money;
     }
-
     /**
      * Display the players hand.
      * @return hand - an ArrayList of Card objects
@@ -78,7 +77,6 @@ public class Player {
     public List<Card> getHand() {
         return hand;
     }
-
     /**
      * Method is used in BlackJack game to display just one of the cpu players cards at the
      * beginning of the game to simulate how a real game of BlackJack begins with one card up.
@@ -88,9 +86,5 @@ public class Player {
     public Card getHandCard(int _i){
         return hand.get(_i);
     }
-
-
-
-
 }
 
