@@ -2,6 +2,9 @@ package io.illcoder.casinoRoyale.core;
 
 import java.io.IOException;
 import java.util.Scanner;
+import javax.sound.sampled.*;
+
+import static io.illcoder.casinoRoyale.core.SecretGame.secretGame;
 
 
 /**
@@ -9,14 +12,15 @@ import java.util.Scanner;
  * as serving as a return pad for players that leave a game
  */
 public class App {
-
-    //Dealer dealer = new Dealer;
+MusicPlayer musicPlayer = new MusicPlayer();
+//Dealer dealer = new Dealer;
 
 
     //intiates scanner for entire class
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
+        musicPlayer();
         System.out.println(" __   __    ______     ___           _______. __  .__   __.   ______      .______        ______   ____    ____  ___       __       _______  __   __  \n" +
                 "|  | |  |  /      |   /   \\         /       ||  | |  \\ |  |  /  __  \\     |   _  \\      /  __  \\  \\   \\  /   / /   \\     |  |     |   ____||  | |  | \n" +
                 "|  | |  | |  ,----'  /  ^  \\       |   (----`|  | |   \\|  | |  |  |  |    |  |_)  |    |  |  |  |  \\   \\/   / /  ^  \\    |  |     |  |__   |  | |  | \n" +
@@ -30,6 +34,10 @@ public class App {
         //Starts method for name input after prompt and game selection
             menuSelection();
     }
+
+    private static void musicPlayer() {
+    }
+
     //created method containing all main menu user input.
     private static void menuSelection() {
         //This string will set the players name
@@ -63,7 +71,11 @@ public class App {
                 case 2:
                     gameSelection = "You have a seat at the poker table. Your opponent smells like urine and failed dreams.";
                     //starts a new blackjack game by creating PokerDealer object current loops ends
-
+                    break;
+                case 3:
+                    gameSelection = "You spot a suspicious looking guy behind the bar. He nods for you to come over,\n" +
+                            " you oblige though you doubt your mother would approve. ";
+                    secretGame();
                     break;
                 case 0:
                     gameSelection = "You cut and run out the front door on foot. Your getting to old for this shit.";
