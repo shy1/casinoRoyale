@@ -1,10 +1,12 @@
 package io.illcoder.casinoRoyale.core;
 
+import io.illcoder.casinoRoyale.blackjack.BlackjackEngine;
+
 import java.io.IOException;
 import java.util.Scanner;
 import javax.sound.sampled.*;
 
-import static io.illcoder.casinoRoyale.core.SecretGame.secretGame;
+//import static io.illcoder.casinoRoyale.core.SecretGame.secretGame;
 
 
 /**
@@ -12,7 +14,7 @@ import static io.illcoder.casinoRoyale.core.SecretGame.secretGame;
  * as serving as a return pad for players that leave a game
  */
 public class App {
-MusicPlayer musicPlayer = new MusicPlayer();
+//MusicPlayer musicPlayer = new MusicPlayer();
 //Dealer dealer = new Dealer;
 
 
@@ -49,6 +51,8 @@ MusicPlayer musicPlayer = new MusicPlayer();
                 "1 for BlackJack, " +
                 "2 for Poker, or " +
                 "0 to quit:  ");
+
+        Player user = new Player(playerName);
         //start loop for switch statement
         Boolean continueLoop = true;
         while (continueLoop) {
@@ -66,7 +70,8 @@ MusicPlayer musicPlayer = new MusicPlayer();
                     gameSelection = " You strut confidently to the BlackJack table." +
                             " A slovenly man past his prime gaze meets yours as sit, he smiles confident of his pending victory.";
                     //starts a new blackjack game by creating BlackJackDealer object current loops ends
-
+                    BlackjackEngine game = new BlackjackEngine();
+                    game.runGame(user);
                     break;
                 case 2:
                     gameSelection = "You have a seat at the poker table. Your opponent smells like urine and failed dreams.";
@@ -75,7 +80,7 @@ MusicPlayer musicPlayer = new MusicPlayer();
                 case 3:
                     gameSelection = "You spot a suspicious looking guy behind the bar. He nods for you to come over,\n" +
                             " you oblige though you doubt your mother would approve. ";
-                    secretGame();
+                    //secretGame();
                     break;
                 case 0:
                     gameSelection = "You cut and run out the front door on foot. Your getting to old for this shit.";
