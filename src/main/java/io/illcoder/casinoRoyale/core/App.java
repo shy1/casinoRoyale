@@ -77,7 +77,7 @@ public class App {
                 case 2:
                     gameSelection = "You have a seat at the poker table. Your opponent smells like urine and failed dreams.";
                     //starts a new blackjack game by creating PokerDealer object current loops ends
-                    PokerEngine poker = new PokerEngine();
+                    PokerEngine poker = new PokerEngine(user);
                     poker.runGame();
                     break;
                 case 3:
