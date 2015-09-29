@@ -594,10 +594,10 @@ public class PokerEngine {
         return topHand;
     }
 
-    public static void main(String[] args) {
-        Player aPlayer = new Player("Seth");
-        PokerEngine game = new PokerEngine(aPlayer);
-        game.runGame();
-    }
+//    public static void main(String[] args) {
+//        Player aPlayer = new Player("Seth");
+//        PokerEngine game = new PokerEngine(aPlayer);
+//        game.runGame();
+//    }
 
 }
