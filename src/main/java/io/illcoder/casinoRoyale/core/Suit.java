@@ -7,5 +7,15 @@ package io.illcoder.casinoRoyale.core;
 
 
 public enum Suit {
-    SPADES, HEARTS, CLUBS, DIAMONDS;
+    SPADES("S"), HEARTS("H"), CLUBS("C"), DIAMONDS("D");
+
+    private String altSuit;
+
+    Suit (String altSuit) {
+        this.altSuit = altSuit;
+    }
+
+    public String getAltSuit(){
+        return this.altSuit;
+    }
 }

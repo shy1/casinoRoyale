@@ -5,26 +5,28 @@ package io.illcoder.casinoRoyale.core;
  * Adds all rank and numeric values for both poker and black jack for all possible cards
  */
 public enum Rank {
-    TWO(2,2), THREE(3,3), FOUR(4,4), FIVE(5,5), SIX(6,6), SEVEN(7,7), EIGHT(8,8), NINE(9,9), TEN(10,10), JACK(11,10),
-    QUEEN(12,10), KING(13,10), ACE(14,11);
+    TWO(2,2,"2"), THREE(3,3,"3"), FOUR(4,4,"4"), FIVE(5,5,"5"), SIX(6,6,"6"), SEVEN(7,7,"7"), EIGHT(8,8,"8"), NINE(9,9,"9"), TEN(10,10,"T"), JACK(11,10,"J"),
+    QUEEN(12,10,"Q"), KING(13,10,"K"), ACE(14,11,"A");
 
     private int pokerValue;
     private int blackjackValue;
+    private String altRank;
 
     /**
      * Rank object Constructor that establishes the value type of poker and black jack
-      * @param pokerValue
+     * @param pokerValue
      * @param blackjackValue
      */
-     Rank(int pokerValue, int blackjackValue){
+
+    Rank(int pokerValue, int blackjackValue, String altRank){
         this.pokerValue = pokerValue;
         this.blackjackValue = blackjackValue;
-
+        this.altRank = altRank;
     }
 
     /**
      * This function gets the numeric value for poker for a particular rank
-      * @return int pokerValue is the numeric value to be used in the poker game
+     * @return int pokerValue is the numeric value to be used in the poker game
      */
     public int getPokerValue(){
         return this.pokerValue;
@@ -36,6 +38,10 @@ public enum Rank {
      */
     public int getBlackjackValue(){
         return this.blackjackValue;
+    }
+
+    public String getAltRank(){
+        return this.altRank;
     }
 
 }

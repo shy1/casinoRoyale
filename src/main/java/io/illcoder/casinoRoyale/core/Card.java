@@ -16,6 +16,8 @@ public class Card {
 
     private int cardPokerValue;
     private int cardBlackjackValue;
+    private String altSuit;
+    private String altRank;
 
     /**
      * Constructor for the Card class that establishes the value for suit and rank.
@@ -29,6 +31,8 @@ public class Card {
         this.rank = rank;
         this.cardPokerValue = this.rank.getPokerValue();
         this.cardBlackjackValue = this.rank.getBlackjackValue();
+        this.altSuit = this.suit.getAltSuit();
+        this.altRank = this.rank.getAltRank();
     }
 
     /**
@@ -68,8 +72,8 @@ public class Card {
      * @return
      */
     public String toString(){
-        return rank + " of " + suit;
+        return altRank + "" + altSuit;
     }
 
-
 }
+
