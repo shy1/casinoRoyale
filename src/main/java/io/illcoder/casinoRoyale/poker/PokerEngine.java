@@ -524,7 +524,7 @@ public class PokerEngine {
             case 0:
                 bb.setMoney(bb.getMoney() + (pot/2));
                 sb.setMoney(sb.getMoney() + (pot/2));
-                System.out.println("\nThe $" + pot + "pot is split.");
+                System.out.println("\nThe $" + pot + " pot is split.");
                 break;
             case 1:
                 sb.setMoney(sb.getMoney() + pot);
